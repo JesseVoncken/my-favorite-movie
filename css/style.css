@@ -1,29 +1,135 @@
-body {
-    background-image: url("../assets/bg.jpg");
-    }
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
 
-h1 {
-    color:gold; text-align: center;
-    font-family: fantasy;
-    font-size: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    }
-
-#banner {  
+.thumb{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    }
+    margin-bottom: 5%;
+    background-color: #2C1825;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
 
-main {
-    color: yellow;
-    border: 3px solid grey;
-    padding: 10px;
-    }
+    transition: ease-in 300ms;
+}
+.thumb .thumb-img-miguel{
+    height: 335px;
+    width: 100%;
+    background-image: url(../assets/miguel.jpg);
+    background-size: cover;
+    background-position: center center;
+}
 
-#kill {
-    border-radius: 50px;
+.thumb .thumb-img-miles{
+    height: 335px;
+    width: 100%;
+    background-image: url(../assets/miles.jpg);
+    background-size: cover;
+    background-position: center center;
+}
 
-        }
+.thumb .thumb-img-gwen{
+    height: 335px;
+    width: 100%;
+    background-image: url(../assets/gwen.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.thumb:hover{
+    background: #754162;
+    scale: 1.1;
+}
+
+.thumb-inner{
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+
+body{
+    background-image: url(../assets/background.jpeg);
+    background-size:cover;
+}
+
+.thumb-large{
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: #2C1825;
+    width: 960px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+
+    transition: ease-in 300ms;
+
+}
+
+.thumb-large:hover{
+    background: #754162;
+    scale: 1.1;
+}
+
+.thumb-large .thumb-img{
+    height: 335px;
+    width: 100%;
+    background-image: url(../assets/spiderverse.jpg);
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+
+.search{
+    background: black;
+    border-radius: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+
+    transition: ease-in 300ms;
+}
+
+.searchbar{
+    background: black;
+    border-radius: 10px;
+    z-index: 0;
+    width: 0px;
+    height: 80px;
+    position: fixed;
+    left: 40px;
+    top: 30px;
+
+    transition: ease-in 300ms;
+}
+
+.search:hover{
+    scale: 1.1;
+}
+
+
+.search:hover + .searchbar{
+width: 300px;
+}
+
+.search-img{
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
